@@ -1,18 +1,15 @@
-// import { useState } from 'react'
+import { FavoritesProvider } from './context/FavoritesProvider';
 
-import './App.css'
+import './App.css';
+
 
 function App() {
-
   return (
-    <>
-      <section id="center">
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    <FavoritesProvider>
+      <div id="center">
+      </div>
+    </FavoritesProvider>
+  );
 }
 
-export default App
+export default App;
